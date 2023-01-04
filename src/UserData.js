@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { DataGrid } from '@mui/x-data-grid';
+import {Link} from "react-router-dom";
 
 const columns = [
  { field: 'id', headerName: 'ID', width: 70 },
@@ -27,6 +28,7 @@ const rows= JSON.parse(data);
 export default function UserData() {
   return (
     <div style={{ height: 400, width: '100%' }}>
+    <Link to="/">Home</Link>
       <DataGrid
         rows={rows}
         columns={columns}
