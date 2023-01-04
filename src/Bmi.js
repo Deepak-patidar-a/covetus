@@ -144,11 +144,10 @@ const BMI = () => {
 
 
   return (
-  
+
     
    <>
    <Link to="UserData">User Data</Link>
-
     <Stack gap="25px" sx={{flexDirection : {lg: 'row'}, pb:'30px', pt:'10px',
             alignItems:'center'}}>
             {!validfirstName && <h6>Enter Valid First Name</h6> }
